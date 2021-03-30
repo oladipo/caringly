@@ -4,15 +4,16 @@ defmodule Hl7parser do
   """
 
   @doc """
-  Hello world.
+  params.
 
   ## Examples
-
-      iex> Hl7parser.hello()
-      :world
+      iex> Hl7parser.query(params)
 
   """
-  def hello do
-    :world
+  def query(params) do
+
+    params
+
   end
+
 end
