@@ -85,7 +85,7 @@ defmodule Hl7parser do
 
               Logger.debug("subcomponent: #{inspect(subcomponent)} ")
 
-              subcomponent
+              String.replace(subcomponent, " Team", "")
 
             end
 
