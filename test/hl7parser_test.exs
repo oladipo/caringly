@@ -5,8 +5,8 @@ defmodule Hl7parserTest do
   test "pid_2_1_query returns correct output" do
 
     ##Arrange
-    params = ""
-    expected = 306648
+    params = "PID-2.1"
+    expected = "306648"
 
     ##Act
     actual = Hl7parser.query(params)
@@ -20,7 +20,7 @@ defmodule Hl7parserTest do
   test "pid_5_2_query returns correct output" do
 
     ##Arrange
-    params = ""
+    params = "PID-5.2"
     expected = "Sandesh"
 
     ##Act
@@ -32,10 +32,10 @@ defmodule Hl7parserTest do
 
   end
 
-  test "pvi_5_2_1_1query returns correct output" do
+  test "pvi_52_1_1_query returns correct output" do
 
     ##Arrange
-    params = ""
+    params = "PV1-52[-1].1"
     expected = "Rainbow"
 
     ##Act
