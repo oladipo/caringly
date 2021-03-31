@@ -3,48 +3,38 @@ defmodule Hl7parserTest do
   # doctest Hl7parser
 
   test "pid_2_1_query returns correct output" do
-
-    ##Arrange
+    ## Arrange
     params = "PID-2.1"
     expected = "306648"
 
-    ##Act
+    ## Act
     actual = Hl7parser.query(params)
 
-    ##Assert
-
+    ## Assert
     assert actual == expected
-
   end
 
   test "pid_5_2_query returns correct output" do
-
-    ##Arrange
+    ## Arrange
     params = "PID-5.2"
     expected = "Sandesh"
 
-    ##Act
+    ## Act
     actual = Hl7parser.query(params)
 
-    ##Assert
-
+    ## Assert
     assert actual == expected
-
   end
 
   test "pvi_52_1_1_query returns correct output" do
-
-    ##Arrange
+    ## Arrange
     params = "PV1-52[-1].1"
     expected = "Rainbow"
 
-    ##Act
+    ## Act
     actual = Hl7parser.query(params)
 
-    ##Assert
-
+    ## Assert
     assert actual == expected
-
   end
-
 end
